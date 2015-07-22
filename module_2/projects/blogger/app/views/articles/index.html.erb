@@ -1,9 +1,10 @@
-<h4><%= link_to "Previous Page", '/' %></h4>
+
 <h1> Articles </h1>
 
 <ul id="articles">
   <% @articles.each do |article| %>
   <li><%= link_to article.title, article %> </li>
   <% end %>
-</ul>
+</ul><br><br>
 <h3> <%= link_to "New Article", new_article_path %><h3>
+<h4><%= link_to "Previous Page", '/' %></h4>
