@@ -1,5 +1,11 @@
 
 <h2> <%= @article.title %>  </h2>
+<p>
+  Tags:
+  <% @article.tags.each do |tag| %>
+  <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
 <p><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.size %>)</h3>
 <%= render partial: 'partials/comment', collection: @article.comments %>
