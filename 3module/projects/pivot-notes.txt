@@ -1,0 +1,8 @@
+---Client----
+
+keep filters by categories
+cart should be able to hold products from different farmers
+"continue shopping" at the cart page goes back to the farmers index
+keep market brand on top
+
+---Technical----
